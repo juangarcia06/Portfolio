@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>WayIndustries</title>
+    <link rel="icon" type="image/x-icon" href="../../images/transparent-logo.png">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="../../css/jg.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+    <script src="https://kit.fontawesome.com/3e6664068e.js" crossorigin="anonymous"></script>
+    <style>
+      body,h1,h2,h3 {font-family: "Raleway", sans-serif}
+
+      body, html {
+      height: 100%;
+      line-height: 1.8;
+      }
+      </style>
+    </head>
+  <body>
+
+      <!-- Navbar -->
+<div class="jg-top">
+  <div class="jg-bar jg-white jg-card" id="myNavbar">
+    <a href="/" class="jg-bar-item jg-button jg-wide"><img class="jg-image" src="../../images/transparent-logo.png" width="30" height="30"></a>
+    <!-- Right-sided navbar links -->
+    <div class="jg-right jg-hide-small">
+      <a href="../../educacion/" class="jg-bar-item jg-button">Educación</a>
+      <a href="../../proyectos/" class="jg-bar-item jg-button">Proyectos</a>
+    </div>
+    <!-- Replace links with menu icon on small screens -->
+    <a href="javascript:void(0)" class="jg-bar-item jg-button jg-right jg-hide-large jg-hide-medium" onclick="jg_open()">
+      <i class="fa fa-bars"></i>
+    </a>
+  </div>
+</div>
+<!-- Sidebar when clicking menu icon -->
+<nav class="jg-sidebar jg-bar-block jg-black jg-card jg-animate-left jg-hide-medium jg-hide-large" style="display:none" id="mySidebar">
+  <a href="javascript:void(0)" onclick="jg_close()" class="jg-bar-item jg-button jg-large jg-padding-16">Cerrar x</a>
+  <a href="../../educacion.html" onclick="jg_close()" class="jg-bar-item jg-button">Educación</a>
+  <a href="../../proyectos.html" onclick="jg_close()" class="jg-bar-item jg-button">Proyectos</a>
+</nav>
+
+<!-- Content -->
+
+
+
+
+<!-- Footer -->
+<footer class="jg-center jg-black jg-padding-16">
+  <a href="#top" class="jg-button jg-light-grey"><i class="fa fa-arrow-up jg-margin-right"></i>Subir arriba</a>
+  <div class="jg-xlarge jg-section">
+    <a href="https://instagram.com/juan_garcia2006_" class="fa fa-instagram jg-no-underline jg-hover-opacity"></a>
+    <a href="https://youtube.com/channel/UCr2BL4M0lVXs_ZjaFEeI6KQ" class="fa fa-youtube jg-no-underline jg-hover-opacity"></a>
+    <a href="https://www.linkedin.com/in/juan-antonio-garc%C3%ADa-torrens-42959023a/" class="fa fa-linkedin jg-no-underline jg-hover-opacity"></a>
+    <a href="https://discord.gg/VeFtX5rUBQ" class="fab fa-discord jg-no-underline jg-hover-opacity"></a>
+    <a href="mailto:superjuan.madrid2015@gmail.com" class="fas fa-envelope jg-no-underline jg-hover-opacity"></a>
+  </div>
+<p class="jg-small">© Copyright 2022 - Juan Antonio García Torrens</p>
+</footer>
+
+
+
+<script>
+  // Modal Image Gallery
+  function onClick(element) {
+  document.getElementById("img01").src = element.src;
+  document.getElementById("modal01").style.display = "block";
+  var captionText = document.getElementById("caption");
+  captionText.innerHTML = element.alt;
+  }
+
+  // Toggle sidebar
+  var mySidebar = document.getElementById("mySidebar");
+
+  function jg_open() {
+    if (mySidebar.style.display === 'block'){
+      mySidebar.style.display = 'none';
+      } else {
+      mySidebar.style.display = 'block';
+      }
+  }
+
+  // Close the sidebar with button
+  function jg_close() {
+    mySidebar.style.display = "none";
+  }
+  </script>
+  </body>
+</html>

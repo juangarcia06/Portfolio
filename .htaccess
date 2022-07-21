@@ -1,0 +1,18 @@
+# Pagina de error
+ErrorDocument 404 /error.html
+
+#Que no aparezca .html en el link
+
+RewriteEngine on
+
+#hacer que las carpetas no den error
+
+RewriteCond %{REQUEST_FILENAME} !-d
+
+#check for files with html extensions
+
+RewriteCond %{REQUEST_FILENAME}\.html -f
+
+#actually show page with .html extensions
+
+RewriteRule ^(.*)$ $1.html [NC,L]

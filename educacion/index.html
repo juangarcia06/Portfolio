@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Educación</title>
+    <link rel="icon" type="image/x-icon" href="../images/transparent-logo.png">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="../css/jg.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+    <script src="https://kit.fontawesome.com/3e6664068e.js" crossorigin="anonymous"></script>
+    <style>
+      body,h1,h2,h3 {font-family: "Raleway", sans-serif}
+
+      body, html {
+      height: 100%;
+      line-height: 1.8;
+      }
+      </style>
+    </head>
+  <body>
+
+<!-- Navbar -->
+<div class="jg-top">
+  <div class="jg-bar jg-white jg-card" id="myNavbar">
+    <a href="/" class="jg-bar-item jg-button jg-wide"><img class="jg-image" src="../images/transparent-logo.png" width="30" height="30"></a>
+    <!-- Right-sided navbar links -->
+    <div class="jg-right jg-hide-small">
+      <a href="../educacion/" class="jg-bar-item jg-button">Educación</a>
+      <a href="../proyectos/" class="jg-bar-item jg-button">Proyectos</a>
+    </div>
+    <!-- Replace links with menu icon on small screens -->
+    <a href="javascript:void(0)" class="jg-bar-item jg-button jg-right jg-hide-large jg-hide-medium" onclick="jg_open()">
+      <i class="fa fa-bars"></i>
+    </a>
+  </div>
+</div>
+<!-- Sidebar when clicking menu icon -->
+<nav class="jg-sidebar jg-bar-block jg-black jg-card jg-animate-left jg-hide-medium jg-hide-large" style="display:none" id="mySidebar">
+  <a href="javascript:void(0)" onclick="jg_close()" class="jg-bar-item jg-button jg-large jg-padding-16">Cerrar x</a>
+  <a href="../educacion/" onclick="jg_close()" class="jg-bar-item jg-button">Educación</a>
+  <a href="../proyectos/" onclick="jg_close()" class="jg-bar-item jg-button">Proyectos</a>
+</nav>
+
+<div class="jg-container jg-light-white">
+    <p>" "</p>
+</div>
+<!-- Educación -->
+<div class="jg-container jg-light-grey" style="padding:32px 32px" id="top">
+  <div class="jg-row-padding">
+    <div class="jg-col m6">
+      <h1>Educación</h1>
+      <p>Estoy estudiando en el colegio alemán de Madrid DSM desde 2013. Mientras tanto hago cursos y llevo mis propios proyectos.</p>
+    </div>
+  </div>
+</div>
+
+
+
+<!-- Educación y cursos -->
+<div class="jg-container jg-light-white" style="padding:64px 64px" id="cursos">
+  <div class="jg-row-padding">
+    <div class="jg-col m6">
+      <h2>Formación</h2>
+      <p>Colegio alemán de Madrid DSM Gymnasium (Bachillerato alemán) 2014-2025</p>
+      <a href="https://learndigital.withgoogle.com/link/1nur091p2ww" target="_blank">Digitaliza paso a paso tu negocio con herramientas de Google</a>
+      <p>Código: GSPAGT79A</p>
+      <a href="https://learndigital.withgoogle.com/link/1nur091p2ww" target="_blank">Competencias digitales para profesionales</a>
+      <p>Código: JRPUQYTLX</p>
+      <a href="https://learndigital.withgoogle.com/link/1nur091p2ww" target="_blank">Protege tu Negocio: Ciberseguridad en el Teletrabajo</a>
+      <p>Código: M3HTJ9DTA</p>
+    </div>
+  </div>
+</div>
+
+
+<!-- Conocimientos -->
+<div class="jg-container jg-light-grey" style="padding:64px 64px" id="con">
+  <div class="jg-row-padding"
+    <div class="jg-col m6">
+      <h3>Conocimientos</h3>
+      <a href="https://www.arduino.cc/en/Guide/Introduction" target="_blank">Arduino</a><br>
+      <a href="https://processing.org" target="_blank">Processing Java</a><br>
+      <a href="https://www.bluej.org" target="_blank">BlueJ Java object orientated</a><br>
+      <a href="https://www.greenfoot.org/door" target="_blank">Greenfoot Java game engine</a><br>
+      <a href="">Raspberry Pi</a><p>He hecho muchos proyectos con Raspberry Pi y placas SBC. Desde servidores docker hasta nodos de minería como el WayMiner diseñado por mí, produce unos 10-40€ mensuales y consume 6W.</p>
+    </div>
+  </div>
+</div>
+
+<!-- Footer -->
+<footer class="jg-center jg-black jg-padding-16">
+  <a href="#top" class="jg-button jg-light-grey"><i class="fa fa-arrow-up jg-margin-right"></i>Subir arriba</a>
+  <div class="jg-xlarge jg-section">
+    <a href="https://instagram.com/juan_garcia2006_" target="_blank" class="fa fa-instagram jg-no-underline jg-hover-opacity"></a>
+    <a href="https://youtube.com/channel/UCr2BL4M0lVXs_ZjaFEeI6KQ" target="_blank" class="fa fa-youtube jg-no-underline jg-hover-opacity"></a>
+    <a href="https://www.linkedin.com/in/juan-antonio-garc%C3%ADa-torrens-42959023a/" target="_blank" class="fa fa-linkedin jg-no-underline jg-hover-opacity"></a>
+    <a href="https://discord.gg/VeFtX5rUBQ" target="_blank" class="fab fa-discord jg-no-underline jg-hover-opacity"></a>
+    <a href="mailto:superjuan.madrid2015@gmail.com" class="fas fa-envelope jg-no-underline jg-hover-opacity"></a>
+    <p class="jg-tiny">superjuan.madrid2015@gmail.com</p>
+  </div>
+<p class="jg-small">© Copyright 2022 - Juan Antonio García Torrens</p>
+</footer>
+
+
+
+<script>
+  // Modal Image Gallery
+  function onClick(element) {
+  document.getElementById("img01").src = element.src;
+  document.getElementById("modal01").style.display = "block";
+  var captionText = document.getElementById("caption");
+  captionText.innerHTML = element.alt;
+  }
+
+  // Toggle sidebar
+  var mySidebar = document.getElementById("mySidebar");
+
+  function jg_open() {
+    if (mySidebar.style.display === 'block'){
+      mySidebar.style.display = 'none';
+      } else {
+      mySidebar.style.display = 'block';
+      }
+  }
+
+  // Close the sidebar with button
+  function jg_close() {
+    mySidebar.style.display = "none";
+  }
+  </script>
+  </body>
+</html>

@@ -1,0 +1,168 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Juan García Portfolio</title>
+        <!--Favicon-->
+        <link rel="icon" type="image/x-icon" href="./images/transparent-logo.png">
+        <!-- Load external CSS styles -->
+        <link rel="stylesheet" href="./css/jg.css">
+        <!-- Font awesome 5 and font-->
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+        <script src="https://kit.fontawesome.com/3e6664068e.js" crossorigin="anonymous"></script>
+        <style>
+    body,h1,h2,h3,h4 {font-family: "Raleway", sans-serif}
+
+    body, html {
+      height: 100%;
+      line-height: 1.8;
+    }
+
+    /* Full height image header */
+    .bgimg-1 {
+      background-position: center;
+      background-size: cover;
+      background-image: url('./images/background.jpeg');
+      min-height: 100%;
+    }
+
+    .jg-bar .jg-button {
+      padding: 16px;
+    }
+    </style>
+    </head>
+<body>
+<!-- Navbar (sit on top) -->
+<div class="jg-top">
+  <div class="jg-bar jg-white jg-card" id="myNavbar">
+    <a href="/" class="jg-bar-item jg-button jg-wide"><img class="jg-image"src="./images/transparent-logo.png" width="30" height="30"></a>
+    <!-- Right-sided navbar links -->
+    <div class="jg-right jg-hide-small">
+      <a href="./educacion/" class="jg-bar-item jg-button"> Educacíon</a>
+      <a href="./proyectos/" class="jg-bar-item jg-button"> Proyectos</a>
+    </div>
+    <!-- Hide right-floated links on small screens and replace them with a menu icon -->
+
+    <a href="javascript:void(0)" class="jg-bar-item jg-button jg-right jg-hide-large jg-hide-medium" onclick="jg_open()">
+      <i class="fa fa-bars"></i>
+    </a>
+  </div>
+</div>
+
+<!-- Sidebar on small screens when clicking the menu icon -->
+<nav class="jg-sidebar jg-bar-block jg-black jg-card jg-animate-left jg-hide-medium jg-hide-large" style="display:none" id="mySidebar">
+  <a href="javascript:void(0)" onclick="jg_close()" class="jg-bar-item jg-button jg-large jg-padding-16">Cerrar ×</a>
+  <a href="./educacion/" onclick="jg_close()" class="jg-bar-item jg-button">Educacíon</a>
+  <a href="./proyectos/" onclick="jg_close()" class="jg-bar-item jg-button">Proyectos</a>
+</nav>
+
+<!-- Header with full-height image -->
+<header class="bgimg-1 jg-display-container jg-grayscale-min" id="home">
+  <div class="jg-display-left jg-text-white" style="padding:48px">
+    <span class="jg-jumbo jg-hide-small">Juan García</span><br>
+    <span class="jg-xxlarge jg-hide-large jg-hide-medium">Juan García</span><br>
+    <span class="jg-large">Programador y emprendedor.</span>
+    <p><a href="#about" class="jg-button jg-white jg-padding-large jg-large jg-margin-top jg-opacity jg-hover-opacity-ff">Conóceme</a></p>
+  </div> 
+  <div class="jg-display-bottomleft jg-text-grey jg-large" style="padding:24px 48px">
+    <a href="https://instagram.com/juan_garcia2006_/" target="_blank" class="fa fa-instagram jg-no-underline jg-hover-opacity"></a>
+    <a href="https://youtube.com/channel/UCr2BL4M0lVXs_ZjaFEeI6KQ" target="_blank" class="fa fa-youtube jg-no-underline jg-hover-opacity"></a>
+    <a href="https://www.linkedin.com/in/juan-antonio-garc%C3%ADa-torrens-42959023a/" target="_blank" class="fa fa-linkedin jg-no-underline jg-hover-opacity"></a>
+    <a href="https://discord.gg/VeFtX5rUBQ" target="_blank" class="fab fa-discord jg-no-underline jg-hover-opacity"></a>
+    <a href="mailto:superjuan.madrid2015@gmail.com" class="fas fa-envelope jg-no-underline jg-hover-opacity"></a>
+  </div>
+</header>
+
+<!-- About Section -->
+<div class="jg-container" style="padding:64px 16px" id="about">
+  <h1 class="jg-center">Sobre mí</h1>
+  <div class="jg-row-padding jg-center" style="margin-top:64px">
+    <div class="jg-quarter jg-zoom-12">
+      <i class="fa fa-book jg-margin-bottom jg-jumbo jg-center"></i>
+      <p class="jg-large">Idiomas</p>
+      <p>Se hablar español, alemán e inglés.</p>
+    </div>
+    <div class="jg-quarter jg-zoom-12">
+      <i class="fa fa-heart jg-margin-bottom jg-jumbo"></i>
+      <p class="jg-large">Pasión</p>
+      <p>Siempre me ha apasionado el mundo del emprendimiento y de la informática.</p>
+    </div>
+    <div class="jg-quarter jg-zoom-12">
+      <i class="fa fa-bar-chart jg-margin-bottom jg-jumbo"></i>
+      <p class="jg-large">Emprendedor</p>
+      <p>He montado varios e-commerce, mineros y diferentes negocios.</p>
+    </div>
+    <div class="jg-quarter jg-zoom-12">
+      <i class="fa fa-cog jg-margin-bottom jg-jumbo"></i>
+      <p class="jg-large">Técnico</p>
+      <p>He arreglado y montado más de 30 ordenadores. </p>
+    </div>
+  </div>
+</div>
+
+<!-- Educación y proyectos-->
+<div class="jg-container jg-light-grey" style="padding:16px 16px">
+  <div class="jg-row-padding">
+    <div class="jg-col m6">
+      <h2>Educación y proyectos</h2>
+      <p>Todos mis proyectos y conocimientos estan accesibles desde los botones de debajo</p>
+      <p><a href="./educacion/" class="jg-button jg-black"><i class="fa fa-th"> </i> Ver mi educación y certificados</a></p>
+      <p><a href="./proyectos/" class="jg-button jg-black"><i class="fa fa-th"> </i> Ver mis mejores proyectos</a></p>
+    </div>
+    <div class="jg-col m6">
+      <img class="jg-image" src="https://i.ibb.co/L02X2QK/Captura-de-pantalla-18.png" alt="WayIndustries tienda online Juan Antonio Garcia">
+    </div>
+  </div>
+</div>
+
+
+<!-- Experiencia -->
+
+<div class="jg-container jg-white jg-padding-16">
+    <h4>Experiencia</h4>
+    <p>WayGaming CEO Q1 2022 - Q2 2022<br>WayIndustries CEO Q2 2022 - ahora</p>
+</div>
+
+<!-- Footer -->
+<footer class="jg-center jg-black jg-padding-16">
+  <a href="/" class="jg-button jg-light-grey"><i class="fa fa-arrow-up jg-margin-right"></i>Subir arriba</a>
+  <div class="jg-xlarge jg-section">
+    <a href="https://instagram.com/juan_garcia2006_/" target="_blank" class="fa fa-instagram jg-no-underline jg-hover-opacity"></a>
+    <a href="https://youtube.com/channel/UCr2BL4M0lVXs_ZjaFEeI6KQ" target="_blank" class="fa fa-youtube jg-no-underline jg-hover-opacity"></a>
+    <a href="https://www.linkedin.com/in/juan-antonio-garc%C3%ADa-torrens-42959023a/" target="_blank" class="fa fa-linkedin jg-no-underline jg-hover-opacity"></a>
+    <a href="https://discord.gg/VeFtX5rUBQ" target="_blank" class="fab fa-discord jg-no-underline jg-hover-opacity"></a>
+    <a href="mailto:superjuan.madrid2015@gmail.com" class="fas fa-envelope jg-no-underline jg-hover-opacity"></a>
+    <p class="jg-tiny">superjuan.madrid2015@gmail.com</p>
+  </div>
+ <p class="jg-small">© Copyright 2022 - Juan Antonio García Torrens</p>
+</footer>
+ 
+<script>
+// Modal Image Gallery
+function onClick(element) {
+  document.getElementById("img01").src = element.src;
+  document.getElementById("modal01").style.display = "block";
+  var captionText = document.getElementById("caption");
+  captionText.innerHTML = element.alt;
+}
+
+
+// Toggle between showing and hiding the sidebar when clicking the menu icon
+var mySidebar = document.getElementById("mySidebar");
+
+function jg_open() {
+  if (mySidebar.style.display === 'block') {
+    mySidebar.style.display = 'none';
+  } else {
+    mySidebar.style.display = 'block';
+  }
+}
+
+// Close the sidebar with the close button
+function jg_close() {
+    mySidebar.style.display = "none";
+}
+</script>
+</body>
+</html>
