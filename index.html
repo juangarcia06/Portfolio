@@ -284,6 +284,120 @@ text-align: center;
     <p>DSM (Colegio Alemán de Madrid) 2013 - 2025<br>WayGaming CEO 2022<br>WayIndustries CEO 2022 - ahora</p>
 </div>
 
+<!-- Slider small mucho codigo -->
+
+<style>
+  .slidersmall {
+  align-items: center;
+  background: #E3E3E3;
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+}
+
+@-webkit-keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(calc(-250px * 6));
+  }
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(calc(-250px * 6));
+  }
+}
+.slider {
+  background: white;
+  box-shadow: 0 10px 20px -5px rgba(0, 0, 0, 0.125);
+  height: 100px;
+  margin: auto;
+  overflow: hidden;
+  position: relative;
+  width: 960em;
+}
+.slider::before, .slider::after {
+  background: linear-gradient(to right, white 0%, rgba(255, 255, 255, 0) 100%);
+  content: "";
+  height: 100px;
+  position: absolute;
+  width: 200px;
+  z-index: 2;
+}
+.slider::after {
+  right: 0;
+  top: 0;
+  transform: rotateZ(180deg);
+}
+.slider::before {
+  left: 0;
+  top: 0;
+}
+.slider .slide-track {
+  -webkit-animation: scroll 34.2s linear infinite;
+          animation: scroll 34.2s linear infinite;
+  display: flex;
+  width: calc(250px * 12);
+}
+.slider .slide {
+  height: 100px;
+  width: 250px;
+}
+
+
+
+.sliderstuff1{margin:0;padding:0;border:0;font-size:100%;font:inherit;vertical-align:baseline}.sliderstuff2{display:block}.sliderstuff3{list-style:none}.sliderstuff4{quotes:none}blockquote:before,blockquote:after,q:before,q:after{content:'';content:none}.sliderstuff5{border-collapse:collapse;border-spacing:0}
+</style>
+<!-- Slider -->
+<div class="slider slidersmall sliderstuff1 sliderstuff2 sliderstuff3 sliderstuff4">
+	<div class="slide-track">
+		<div class="slide">
+			<img src="./images/java.jpg" height="100" width="250" alt="" />
+		</div>
+		<div class="slide">
+			<img src="./images/html.jpg" height="100" width="250" alt="" />
+		</div>
+		<div class="slide">
+			<img src="./images/css.jpg" height="100" width="250" alt="" />
+		</div>
+		<div class="slide">
+			<img src="./images/mysql.jpg" height="100" width="250" alt="" />
+		</div>
+		<div class="slide">
+			<img src="./images/shopify.jpg" height="100" width="250" alt="" />
+		</div>
+		<div class="slide">
+			<img src="./images/seo.jpg" height="100" width="250" alt="" />
+		</div>
+		<div class="slide">
+			<img src="./images/java.jpg" height="100" width="250" alt="" />
+		</div>
+		<div class="slide">
+			<img src="./images/html.jpg" height="100" width="250" alt="" />
+		</div>
+		<div class="slide">
+			<img src="./images/css.jpg" height="100" width="250" alt="" />
+		</div>
+		<div class="slide">
+			<img src="./images/mysql.jpg" height="100" width="250" alt="" />
+		</div>
+		<div class="slide">
+			<img src="./images/shopify.jpg" height="100" width="250" alt="" />
+		</div>
+		<div class="slide">
+			<img src="./images/seo.jpg" height="100" width="250" alt="" />
+		</div>
+	</div>
+</div>
+
+
+
+
 
 <!-- Cursos-->
 <div class="jg-container  jg-gradient-green-blue jg-center" style="padding:32px 32px">
