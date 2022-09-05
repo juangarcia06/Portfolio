@@ -1,591 +1,559 @@
 <!doctype html>
 <html>
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <meta property="og:image" content="./images/background.jpeg" />
-        <title>Portfolio de Juan García</title>
-        <meta name="og:autor" content="Portfolio"/>
-        <!--Favicon-->
-        <link rel="icon" type="image/x-icon" href="./images/transparent-logo.png">
-        <!-- Load external CSS styles -->
-        <link rel="stylesheet" href="./css/jg.css">
-        <!-- Font awesome 5 and font-->
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
-        <script src="https://kit.fontawesome.com/3e6664068e.js" crossorigin="anonymous"></script>
-        <style>
-    body,h1,h2,h3,h4 {font-family: "Raleway", sans-serif}
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Information about site -->
+		<title>Portfolio de Juan García</title>
+		<meta property="og:title" content="Portfolio de Juan García" />
+		<meta property="og:description" content="Descripción de mi Portfolio" />
+		<meta property="og:url" content="juangarciatorrens.netlify.app" />
+		<!--   <meta property="og:image" content="./" />   -->
+		<!--Favicon-->
+		<link rel="icon" type="image/x-icon" href="./images/transparent-logo.png">
+		<!-- CSS -->
+		<link rel="stylesheet" href="./css/jg.css">
+    <link rel="stylesheet" href="./css/main.css">
+		<!-- Font awesome 5 and font-->
+		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway&display=swap">
+		<script src="https://kit.fontawesome.com/3e6664068e.js" crossorigin="anonymous"></script>
 
-    body, html {
-      height: 100%;
-      line-height: 1.8;
-    }
+		<!-- Define stuff for css -->
+		<style>
+			/* Font */
+			body, html {
+				height: 100%;
+				line-height: 1.8;
+				font-family: "Raleway", sans-serif
+			}
 
-    /* Full height image header */
-    .bgimg-1 {
-      background-position: center;
-      background-size: cover;
-      background-image: url('./images/background.jpeg');
-      min-height: 100%;
-    }
+			/* Fondo principal */
+			.backgroundstuff {
+				background-position: center;
+				background-size: cover;
+				min-height: 100%;
+				display: flex;
+				height: 100vh;
+				justify-content: center;
+			}
 
-    .jg-bar .jg-button {
-      padding: 16px;
-    }
+      /* Barra navegación */
+			.jg-bar .jg-button {
+				padding: 16px;
+			}			
+		</style>
+	</head>
 
-    .cssbuttons-io-button {
- background: linear-gradient(270deg, #2AF598 0%, #08AEEA 100%);
- color: white;
- font-family: inherit;
- padding: 0.35em;
- padding-left: 1.2em;
- font-size: 17px;
- font-weight: 500;
- border-radius: 0.9em;
- border: none;
- letter-spacing: 0.05em;
- display: flex;
- align-items: center;
- box-shadow: inset 0 0 1.6em -0.6em #0884ea;
- overflow: hidden;
- position: relative;
- height: 2.8em;
- padding-right: 3.3em;
-}
+	<body data-instant-intensity="viewport">
 
-.cssbuttons-io-button .icon {
- background: white;
- margin-left: 1em;
- position: absolute;
- display: flex;
- align-items: center;
- justify-content: center;
- height: 2.2em;
- width: 2.2em;
- border-radius: 0.7em;
- box-shadow: 0.1em 0.1em 0.6em 0.2em #08AEEA;
- right: 0.3em;
- transition: all 0.3s;
-}
-
-.cssbuttons-io-button:hover .icon {
- width: calc(100% - 0.6em);
-}
-
-.cssbuttons-io-button .icon svg {
- width: 1.1em;
- transition: transform 0.3s;
- color: #08AEEA;
-}
-
-.cssbuttons-io-button:hover .icon svg {
- transform: translateX(0.1em);
-}
-
-.cssbuttons-io-button:active .icon {
- transform: scale(0.95);
-}
-        </style>
-        
-    </head>
-<body>
-<!-- Navbar (sit on top) -->
-<div class="jg-top">
-  <div class="jg-bar jg-white jg-card" id="myNavbar">
-    <a href="/" class="jg-bar-item jg-button jg-wide"><img class="jg-image"src="./images/transparent-logo.png" width="30" height="30"></a>
-    <!-- Right-sided navbar links -->
-    <div class="jg-right jg-hide-small">
-      <a href="./proyectos/" class="jg-bar-item jg-button">Proyectos</a>
-    </div>
-    <!-- Hide right-floated links on small screens and replace them with a menu icon -->
-
-    <a href="javascript:void(0)" class="jg-bar-item jg-button jg-right jg-hide-large jg-hide-medium" onclick="jg_open()">
-      <i class="fa fa-bars"></i>
-    </a>
-  </div>
-</div>
-
-<!-- Sidebar on small screens when clicking the menu icon -->
-<nav class="jg-sidebar jg-bar-block jg-black jg-card jg-animate-left jg-hide-medium jg-hide-large" style="display:none" id="mySidebar">
-  <a href="javascript:void(0)" onclick="jg_close()" class="jg-bar-item jg-button jg-large jg-padding-16">Cerrar ×</a>
-  <a href="./proyectos/" onclick="jg_close()" class="jg-bar-item jg-button">Proyectos</a>
-</nav>
-
-<!-- Header with full-height image -->
-<header class="bgimg-1 jg-display-container jg-grayscale-min" id="home">
-  <div class="jg-display-left jg-text-white" style="padding:48px">
-    <span class="jg-jumbo jg-hide-small">Juan García</span><br>
-    <span class="jg-xxlarge jg-hide-large jg-hide-medium">Juan García</span><br>
-    <span class="jg-large">Programador y emprendedor.</span>
-    
-    
-
-    <button class="cssbuttons-io-button jg-margin-top-left" style="left: 0em; top: 1em;" onclick="window.location.href='#about'">Conóceme
-      <div class="icon">
-        <svg height="24" width="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h24v24H0z" fill="none"></path><path d="M16.172 11l-5.364-5.364 1.414-1.414L20 12l-7.778 7.778-1.414-1.414L16.172 13H4v-2z" fill="currentColor"></path></svg>
-      </div>
-    </button>
-
-
-  </div> 
-  <div class="jg-display-bottomleft jg-text-grey jg-large" style="padding:24px 48px">
-    <a href="https://instagram.com/juan_garcia2006_/" target="_blank" class="fa fa-instagram jg-no-underline jg-hover-opacity"></a>
-    <a href="https://youtube.com/channel/UCr2BL4M0lVXs_ZjaFEeI6KQ" target="_blank" class="fa fa-youtube jg-no-underline jg-hover-opacity"></a>
-    <a href="https://www.linkedin.com/in/juan-antonio-garc%C3%ADa-torrens-42959023a/" target="_blank" class="fa fa-linkedin jg-no-underline jg-hover-opacity"></a>
-    <a href="https://discord.gg/VeFtX5rUBQ" target="_blank" class="fab fa-discord jg-no-underline jg-hover-opacity"></a>
-    <a href="https://github.com/BananaC9" target="_blank" class="fab fa-github jg-no-underline jg-hover-opacity"></a>
-    <a href="mailto:superjuan.madrid2015@gmail.com" class="fas fa-envelope jg-no-underline jg-hover-opacity"></a>
-  </div>
-</header>
-
-<!-- About Section -->
-<div class="jg-container" style="padding:32px 32px" id="about">
-  <p> <br> </p>
-  <h1 class="jg-center">Sobre mí</h1>
-  <div class="jg-row-padding jg-center" style="margin-top:64px">
-    <div class="jg-quarter jg-zoom-11">
-      <i class="fa fa-book jg-margin-bottom jg-jumbo jg-center"></i>
-      <p class="jg-large">Idiomas</p>
-      <p>Se hablar español, alemán e inglés.</p>
-    </div>
-    <div class="jg-quarter jg-zoom-11">
-      <i class="fa fa-heart jg-margin-bottom jg-jumbo"></i>
-      <p class="jg-large">Pasión</p>
-      <p>Siempre me ha apasionado el mundo del emprendimiento y de la informática.</p>
-    </div>
-    <div class="jg-quarter jg-zoom-11">
-      <i class="fa fa-bar-chart jg-margin-bottom jg-jumbo"></i>
-      <p class="jg-large">Emprendedor</p>
-      <p>He montado varios e-commerce, mineros y diferentes negocios.</p>
-    </div>
-    <div class="jg-quarter jg-zoom-11">
-      <i class="fa fa-cog jg-margin-bottom jg-jumbo"></i>
-      <p class="jg-large">Técnico</p>
-      <p>He arreglado y montado más de 30 ordenadores. </p>
-    </div>
-  </div>
-</div>
-
-
-
-<!-- Skills -->
-
-<style>
-  .skillbar{
-    position: relative;
-    top:30px;  
-    width: 70%;
-    height:1060px;
-    margin:auto;
-    padding:25px;
-    border-radius: 12px;
-    background-color: #08AEEA;
-    background-image: linear-gradient(270deg, #2AF598 0%, #08AEEA 100%);
-  }
-  .container >h1{
-text-align: center;
-  }
-  @keyframes load{
-    from {
-      width: 0%
-    }
-  }
-  @-webkit-keyframes load{
-    from {
-      width: 0%
-    }
-  }
-  @-moz-keyframes load{
-    from {
-      width: 0%
-    }
-  }
-  @-o-keyframes load{
-    from {
-      width: 0%
-    }
-  }
-  
-  .bar{
-    background-color: #12192c;
-    padding: 2px;
-    border-radius: 15px;
-    margin-bottom: 15px;
-    font-size: 14px;
-    color: #121;
-    font-weight: 600;
-  }
-  .bar::before{
-    content:  attr(data-skill);
-    display: inline-block;
-    padding: 5px 0 5px 10px;
-    border-radius: inherit;
-    animation: load 2s 0s;
-    -webkit-animation: load 5s 0.5s;
-    -moz-animation: load 5s 0.5s;
-    -o-animation: load 5s 0.5s;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-  }
-  
-  .bar.verylow::before{
-    background-color: rgb(10, 141, 255);
-    width: calc(20% - 10px);
-  }
-  .bar.low::before{
-    background-color: hsla(208, 100%, 52%,1);
-    width: calc(40% - 10px);
-  }
-  .bar.medium::before{
-    background-color: hsla(208, 100%, 52%,1);
-    width: calc(60% - 10px);
-  }
-  .bar.mediumhigh::before{
-      background-color: rgb(10, 141, 255);
-    width: calc(80% - 10px);
-  }
-  .bar.high::before{
-      background-color: rgb(10, 141, 255);
-    width: calc(90% - 10px);
-  }
-  .bar.veryhigh::before{
-  background-color: rgb(10, 141, 255);
-  width: calc(98% - 10px);
-}
-</style>
-
-<div class="skillbar">
-  <h1>Habilidades</h2>
-  <div class="bar veryhigh jg-background-blue" data-skill="Java"></div>
-  <div class="bar veryhigh" data-skill="Shopify y e-commerce"></div>
-  <div class="bar veryhigh" data-skill="SQL y MariaDB"></div>
-  <div class="bar high" data-skill="HTML"></div>
-  <div class="bar medium" data-skill="CSS"></div>
-  <div class="bar high" data-skill="Networking"></div>
-  <div class="bar veryhigh" data-skill="Hardware y electrónica"></div>
-  <div class="bar veryhigh" data-skill="Linux y SBCs"></div>
-  <div class="bar high" data-skill="Web 3, crypto, etc."></div>
-  <div class="bar medium" data-skill="Diseño e impresión 3d"></div>
-  <div class="bar high" data-skill="IoT"></div>
-  <div class="bar veryhigh" data-skill="SEO y SEM en todas las plataformas"></div>
-  <div class="bar mediumhigh" data-skill="Edición de fotos, video y audio"></div>
-  <div class="bar veryhigh" data-skill="Redes sociales"></div>
-  <div class="bar veryhigh" data-skill="Tik Tok organico"></div>
-  <div class="bar veryhigh" data-skill="Marketing digital"></div>
-</div>
-
-<div class="jg-container">
-  <p> <br> <br> </p>
-</div>
-
-
-<!-- Experiencia -->
-
-<div class="jg-container jg-white jg-padding-16 jg-center jg-zoom-11">
-    <h4>Experiencia</h4>
-    <p>DSM (Colegio Alemán de Madrid) 2013 - 2025<br>WayGaming CEO 2022<br>WayIndustries CEO 2022 - ahora</p>
-</div>
-
-<!-- Slider small mucho codigo -->
-
-<style>
-  .slidersmall {
-  align-items: center;
-  background: #E3E3E3;
-  display: flex;
-  height: 100vh;
-  justify-content: center;
-}
-
-@-webkit-keyframes scroll {
-  0% {
-    transform: translateX(0);
-  }
-  100% {
-    transform: translateX(calc(-250px * 6));
-  }
-}
-
-@keyframes scroll {
-  0% {
-    transform: translateX(0);
-  }
-  100% {
-    transform: translateX(calc(-250px * 6));
-  }
-}
-.slider {
-  background: white;
-  box-shadow: 0 10px 20px -5px rgba(0, 0, 0, 0.125);
-  height: 100px;
-  margin: auto;
-  overflow: hidden;
-  position: relative;
-  width: 960em;
-}
-.slider::before, .slider::after {
-  background: linear-gradient(to right, white 0%, rgba(255, 255, 255, 0) 100%);
-  content: "";
-  height: 100px;
-  position: absolute;
-  width: 200px;
-  z-index: 2;
-}
-.slider::after {
-  right: 0;
-  top: 0;
-  transform: rotateZ(180deg);
-}
-.slider::before {
-  left: 0;
-  top: 0;
-}
-.slider .slide-track {
-  -webkit-animation: scroll 34.2s linear infinite;
-          animation: scroll 34.2s linear infinite;
-  display: flex;
-  width: calc(250px * 12);
-}
-.slider .slide {
-  height: 100px;
-  width: 250px;
-}
-
-
-
-.sliderstuff1{margin:0;padding:0;border:0;font-size:100%;font:inherit;vertical-align:baseline}.sliderstuff2{display:block}.sliderstuff3{list-style:none}.sliderstuff4{quotes:none}blockquote:before,blockquote:after,q:before,q:after{content:'';content:none}.sliderstuff5{border-collapse:collapse;border-spacing:0}
-</style>
-<!-- Slider -->
-<div class="slider slidersmall sliderstuff1 sliderstuff2 sliderstuff3 sliderstuff4">
-	<div class="slide-track">
-		<div class="slide">
-			<img src="./images/java.jpg" height="100" width="250" alt="" />
+		<!-- Barra navegación -->
+		<div class="jg-top">
+			<div class="jg-bar jg-white jg-card">
+				<a href="#home" class="jg-bar-item jg-button jg-wide">
+					<img src="./images/transparent-logo.png" width="30" height="30">
+				</a>
+				<!-- Boton derecha -->
+				<div class="jg-right">
+					<a href="./proyectos/" class="jg-bar-item jg-button">Proyectos</a>
+				</div>
+			</div>
 		</div>
-		<div class="slide">
-			<img src="./images/html.jpg" height="100" width="250" alt="" />
+
+		<!-- Header con animación 3d -->
+		<header class="backgroundstuff jg-display-container" id="home">
+			<iframe class="jg-hide-medium jg-hide-small" src='https://pcfondobig.netlify.app' frameborder='0' width='100%' height='100%'></iframe>
+			<iframe class="jg-hide-large" src='https://pcfondosmall.netlify.app' frameborder='0' width='100%' height='100%'></iframe>
+      <!-- Texto delante del header-->
+			<div class="jg-display-left jg-text-white" style="padding:48px">
+				<div class="blurtxt">
+					<p class="jg-jumbo jg-hide-small jg-text-black ">Juan García </p>
+						<br>
+				</div>
+				<p class="jg-xxlarge jg-hide-large jg-hide-medium jg-text-black blurtxt">Juan García </p>
+					<br>
+				<div class="blurtxt">
+					<p class="jg-large jg-text-black">Programador y emprendedor. </p>
+				</div>
+				<button class="conoceme-button jg-margin-top-left" style="left: 0em; top: 1em;" onclick="window.location.href='#about'">Conóceme <div class="icon">
+						<svg height="24" width="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+							<path d="M0 0h24v24H0z" fill="none"></path>
+							<path d="M16.172 11l-5.364-5.364 1.414-1.414L20 12l-7.778 7.778-1.414-1.414L16.172 13H4v-2z" fill="currentColor"></path>
+						</svg>
+					</div>
+				</button>
+			</div>
+			
+      <!-- Iconos de redes sociales -->
+			<div class="jg-display-bottomleft jg-text-grey jg-large blur" style="padding:24px 48px">
+				<a href="https://instagram.com/juan_garcia2006_/" target="_blank" class="fa fa-instagram jg-no-underline jg-hover-opacity jg-text-black"></a>
+				<a href="https://youtube.com/channel/UCr2BL4M0lVXs_ZjaFEeI6KQ" target="_blank" class="fa fa-youtube jg-no-underline jg-hover-opacity jg-text-black"></a>
+				<a href="https://www.linkedin.com/in/juan-antonio-garc%C3%ADa-torrens-42959023a/" target="_blank" class="fa fa-linkedin jg-no-underline jg-hover-opacity jg-text-black"></a>
+				<a href="https://discord.gg/VeFtX5rUBQ" target="_blank" class="fab fa-discord jg-no-underline jg-hover-opacity jg-text-black"></a>
+				<a href="https://github.com/BananaC9" target="_blank" class="fab fa-github jg-no-underline jg-hover-opacity jg-text-black"></a>
+				<a href="mailto:superjuan.madrid2015@gmail.com" class="fas fa-envelope jg-no-underline jg-hover-opacity jg-text-black"></a>
+			</div>
+		</header>
+
+		<!-- Sobre mí -->
+		<div class="jg-container" style="padding:32px 32px" id="about">
+			<br>
+			<h1 class="jg-center">Sobre mí</h1>
+			<div class="jg-row-padding jg-center" style="margin-top:64px">
+				<div class="jg-quarter jg-zoom-11">
+					<i class="fa fa-book jg-margin-bottom jg-jumbo jg-center"></i>
+					<p class="jg-large">Idiomas</p>
+					<p>Se hablar español, alemán e inglés.</p>
+				</div>
+				<div class="jg-quarter jg-zoom-11">
+					<i class="fa fa-heart jg-margin-bottom jg-jumbo"></i>
+					<p class="jg-large">Pasión</p>
+					<p>Siempre me ha apasionado el mundo del emprendimiento y de la informática.</p>
+				</div>
+				<div class="jg-quarter jg-zoom-11">
+					<i class="fa fa-bar-chart jg-margin-bottom jg-jumbo"></i>
+					<p class="jg-large">Emprendedor</p>
+					<p>He montado varios e-commerce, mineros y diferentes negocios.</p>
+				</div>
+				<div class="jg-quarter jg-zoom-11">
+					<i class="fa fa-cog jg-margin-bottom jg-jumbo"></i>
+					<p class="jg-large">Técnico</p>
+					<p>He arreglado y montado más de 30 ordenadores. </p>
+				</div>
+			</div>
 		</div>
-		<div class="slide">
-			<img src="./images/css.jpg" height="100" width="250" alt="" />
+		<!-- Skills -->
+		<style>
+			.skillbar {
+				position: relative;
+				top: 0.1em;
+				width: 90%;
+				height: 70em;
+				margin: auto;
+				padding: 1.5625em;
+				border-radius: 25px;
+				background-image: linear-gradient(270deg, #2AF598 0%, #08AEEA 100%);
+			}
+
+			.container>h1 {
+				text-align: center;
+			}
+
+			@keyframes load {
+				from {
+					width: 30%
+				}
+			}
+
+			@-webkit-keyframes load {
+				from {
+					width: 30%
+				}
+			}
+
+			@-moz-keyframes load {
+				from {
+					width: 30%
+				}
+			}
+
+			@-o-keyframes load {
+				from {
+					width: 30%
+				}
+			}
+
+			.bar {
+				background-color: #12192c;
+				padding: 3px;
+				border-radius: 25px;
+				margin-bottom: 15px;
+				font-size: 14px;
+				color: #121;
+				font-weight: 600;
+			}
+
+			.bar::before {
+				content: attr(data-skill);
+				display: inline-block;
+				padding: 5px 0 5px 10px;
+				border-radius: inherit;
+				animation: load 2s 0s;
+				-webkit-animation: load 5s 1s;
+				-moz-animation: load 5s 1s;
+				-o-animation: load 5s 1s;
+			}
+
+			.bar.verylow::before {
+				background-color: rgb(10, 141, 255);
+				width: calc(20% - 10px);
+			}
+
+			.bar.low::before {
+				background-color: hsla(208, 100%, 52%, 1);
+				width: calc(40% - 10px);
+			}
+
+			.bar.medium::before {
+				background-color: hsla(208, 100%, 52%, 1);
+				width: calc(60% - 10px);
+			}
+
+			.bar.mediumhigh::before {
+				background-color: rgb(10, 141, 255);
+				width: calc(80% - 10px);
+			}
+
+			.bar.high::before {
+				background-color: rgb(10, 141, 255);
+				width: calc(90% - 10px);
+			}
+
+			.bar.veryhigh::before {
+				background-color: rgb(10, 141, 255);
+				width: calc(99% - 10px);
+			}
+		</style>
+		<div class="skillbar">
+			<h1>Habilidades </h2>
+				<div class="bar veryhigh jg-background-blue" data-skill="Java"></div>
+				<div class="bar veryhigh" data-skill="Shopify y e-commerce"></div>
+				<div class="bar veryhigh" data-skill="SQL y MariaDB"></div>
+				<div class="bar high" data-skill="HTML"></div>
+				<div class="bar low" data-skill="CSS"></div>
+				<div class="bar high" data-skill="Networking"></div>
+				<div class="bar veryhigh" data-skill="Hardware y electrónica"></div>
+				<div class="bar veryhigh" data-skill="Linux y SBCs"></div>
+				<div class="bar high" data-skill="Web 3, crypto, etc."></div>
+				<div class="bar medium" data-skill="Diseño e impresión 3d"></div>
+				<div class="bar high" data-skill="IoT"></div>
+				<div class="bar veryhigh" data-skill="SEO y SEM"></div>
+				<div class="bar mediumhigh" data-skill="Edición de fotos, video y audio"></div>
+				<div class="bar veryhigh" data-skill="Redes sociales"></div>
+				<div class="bar veryhigh" data-skill="Marketing orgánico"></div>
+				<div class="bar veryhigh" data-skill="Marketing digital"></div>
 		</div>
-		<div class="slide">
-			<img src="./images/mysql.jpg" height="100" width="250" alt="" />
+		<div class="jg-container">
+			<p>
+				<br>
+				<br>
+			</p>
 		</div>
-		<div class="slide">
-			<img src="./images/shopify.jpg" height="100" width="250" alt="" />
+		<!-- Experiencia -->
+		<div class="jg-container jg-white jg-padding-16 jg-center jg-zoom-11">
+			<h4>Experiencia</h4>
+			<p>DSM (Colegio Alemán de Madrid) 2013 - 2025 <br>WayGaming CEO 2022 <br>WayIndustries CEO 2022 - ahora <br>Co-Fundador de UnidosEmprendedores (Discord de 2200 miembros) </p>
 		</div>
-		<div class="slide">
-			<img src="./images/seo.jpg" height="100" width="250" alt="" />
+		<!-- Slider small mucho codigo -->
+		<style>
+			.slidercontainer {
+				align-items: center;
+				background: #E3E3E3;
+				display: flex;
+				height: 100vh;
+				justify-content: center;
+			}
+
+			@-webkit-keyframes scroll {
+				0% {
+					transform: translateX(0);
+				}
+
+				100% {
+					transform: translateX(calc(-15.625em * 6));
+				}
+			}
+
+			@keyframes scroll {
+				0% {
+					transform: translateX(0);
+				}
+
+				100% {
+					transform: translateX(calc(-15.625em * 6));
+				}
+			}
+
+			
+      .slider {
+        background: white;
+        height: 100px;
+        margin: auto;
+        overflow: hidden;
+        position: relative;
+        width: 100%;
+      }
+
+			.slider::before,
+			.slider::after {
+				background: linear-gradient(to right, white 0%, rgba(255, 255, 255, 0) 100%);
+				content: "";
+				height: 9em;
+				position: absolute;
+				width: 12.5em;
+				z-index: 2;
+			}
+
+			.slider::after {
+				right: 0;
+				top: 0;
+				transform: rotateZ(180deg);
+			}
+
+			.slider::before {
+				left: 0;
+				top: 0;
+			}
+
+			.slider .slide-track {
+				-webkit-animation: scroll 34.2s linear infinite;
+				animation: scroll 34.2s linear infinite;
+				display: flex;
+				width: calc(15.625em * 12);
+			}
+
+			.slider .slide {
+				height: 9em;
+				width: 15.625em;
+			}
+
+			.sliderstuff1 {
+				margin: 0;
+				padding: 0;
+				border: 0;
+				font-size: 100%;
+				font: inherit;
+				vertical-align: baseline
+			}
+
+			.sliderstuff2 {
+				display: block
+			}
+
+			.sliderstuff3 {
+				list-style: none
+			}
+
+			.sliderstuff4 {
+				quotes: none
+			}
+
+			blockquote:before,
+			blockquote:after,
+			q:before,
+			q:after {
+				content: '';
+				content: none
+			}
+
+			.sliderstuff5 {
+				border-collapse: collapse;
+				border-spacing: 0
+			}
+		</style>
+		<!-- Slider -->
+		<div class="slider slidercontainer sliderstuff1 sliderstuff2 sliderstuff3 sliderstuff4">
+			<div class="slide-track">
+				<div class="slide">
+					<img loading="lazy" src="./images/java.jpg" height="100px" width="250px" />
+				</div>
+				<div class="slide">
+					<img loading="lazy" src="./images/html.jpg" height="100px" width="250px" />
+				</div>
+				<div class="slide">
+					<img loading="lazy" src="./images/css.jpg" height="100px" width="250px" />
+				</div>
+				<div class="slide">
+					<img loading="lazy" src="./images/mysql.jpg" height="100px" width="250px" />
+				</div>
+				<div class="slide">
+					<img loading="lazy" src="./images/shopify.jpg" height="100px" width="250px" />
+				</div>
+				<div class="slide">
+					<img loading="lazy" src="./images/seo.jpg" height="100px" width="250px" />
+				</div>
+				<div class="slide">
+					<img loading="lazy" src="./images/java.jpg" height="100px" width="250px" />
+				</div>
+				<div class="slide">
+					<img loading="lazy" src="./images/html.jpg" height="100px" width="250px" />
+				</div>
+				<div class="slide">
+					<img loading="lazy" src="./images/css.jpg" height="100px" width="250px" />
+				</div>
+				<div class="slide">
+					<img loading="lazy" src="./images/mysql.jpg" height="100px" width="250px" />
+				</div>
+				<div class="slide">
+					<img loading="lazy" src="./images/shopify.jpg" height="100px" width="250px" />
+				</div>
+				<div class="slide">
+					<img loading="lazy" src="./images/seo.jpg" height="100px" width="250px" />
+				</div>
+			</div>
 		</div>
-		<div class="slide">
-			<img src="./images/java.jpg" height="100" width="250" alt="" />
+    <br>
+		<!-- Cursos-->
+		<div class="jg-container  jg-gradient-green-blue jg-center" style="padding:32px 32px">
+			<div class="jg-row-padding">
+				<h2>Cursos</h2>
+				<a href="https://learndigital.withgoogle.com/link/1nur091p2ww" target="_blank">Digitaliza paso a paso tu negocio con herramientas de Google</a>
+				<p>Código: GSPAGT79A</p>
+				<a href="https://learndigital.withgoogle.com/link/1nur091p2ww" target="_blank">Competencias digitales para profesionales</a>
+				<p>Código: JRPUQYTLX</p>
+				<a href="https://learndigital.withgoogle.com/link/1nur091p2ww" target="_blank">Protege tu Negocio: Ciberseguridad en el Teletrabajo</a>
+				<p>Código: M3HTJ9DTA</p>
+			</div>
 		</div>
-		<div class="slide">
-			<img src="./images/html.jpg" height="100" width="250" alt="" />
+		<!-- Project Section -->
+		<style>
+			button {
+				position: relative;
+				left: 45%;
+				display: inline-block;
+				cursor: pointer;
+				outline: none;
+				border: 0;
+				vertical-align: middle;
+				text-decoration: none;
+				background: transparent;
+				padding: 0;
+				font-size: inherit;
+				font-family: inherit;
+				justify-content: center;
+			}
+
+			button.learn-more {
+				width: 12rem;
+				height: auto;
+			}
+
+			button.learn-more .circle {
+				transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+				position: relative;
+				display: block;
+				margin: 0;
+				width: 3rem;
+				height: 3rem;
+				background: #282936;
+				border-radius: 1.625rem;
+			}
+
+			button.learn-more .circle .icon {
+				transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+				position: absolute;
+				top: 0;
+				bottom: 0;
+				margin: auto;
+				background: #fff;
+			}
+
+			button.learn-more .circle .icon.arrow {
+				transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+				left: 0.625rem;
+				width: 1.125rem;
+				height: 0.125rem;
+				background: none;
+			}
+
+			button.learn-more .circle .icon.arrow::before {
+				position: absolute;
+				content: "";
+				top: -0.29rem;
+				right: 0.0625rem;
+				width: 0.625rem;
+				height: 0.625rem;
+				border-top: 0.125rem solid #fff;
+				border-right: 0.125rem solid #fff;
+				transform: rotate(45deg);
+			}
+
+			button.learn-more .button-text {
+				transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+				position: absolute;
+				top: 0;
+				left: 0;
+				right: 0;
+				bottom: 0;
+				padding: 0.75rem 0;
+				margin: 0 0 0 1.85rem;
+				color: #282936;
+				font-weight: 700;
+				line-height: 1.6;
+				text-align: center;
+				text-transform: uppercase;
+			}
+
+			button:hover .circle {
+				width: 100%;
+			}
+
+			button:hover .circle .icon.arrow {
+				background: #fff;
+				transform: translate(1rem, 0);
+			}
+
+			button:hover .button-text {
+				color: #fff;
+			}
+		</style>
+		<div class="jg-row-padding jg-gradient-green-blue">
+			<button class="learn-more" onclick="window.location.href='./proyectos/'">
+				<span class="circle" aria-hidden="true">
+					<span class="icon arrow"></span>
+				</span>
+				<span class="button-text">Ver más</span>
+			</button>
+			<p>
+				<br>
+			</p>
 		</div>
-		<div class="slide">
-			<img src="./images/css.jpg" height="100" width="250" alt="" />
 		</div>
-		<div class="slide">
-			<img src="./images/mysql.jpg" height="100" width="250" alt="" />
+		<div class="jg-row-padding jg-gradient-green-blue">
+			<div class="jg-col l3 m6 jg-margin-bottom">
+				<div class="jg-display-container">
+					<img loading="lazy" src="/images/wayindustries-min.jpg" alt="WayIndustries" width="100%" height="100%">
+					<img loading="lazy" src="/images/mac-min.jpg" alt="3d mac macintosh 3d design" width="100%" height="100%">
+					<img loading="lazy" src="/images/titancore-min.jpg" alt="TitanCore" width="100%" height="100%">
+					<img loading="lazy" src="/images/jgcss-min.jpg" alt="jg.css" width="100%" height="100%">
+				</div>
+			</div>
+			<div class="jg-col l3 m6 jg-margin-bottom">
+				<div class="jg-display-container">
+					<img loading="lazy" src="/images/pcbuilds.gif" alt="PCs" width="100%" height="100%">
+					<img loading="lazy" src="/images/waygaming-min.jpg" alt="WayGaming" width="100%" height="100%">
+					<img loading="lazy" src="/images/waysticker.jpeg" alt="WayStickers" width="100%" height="100%">
+				</div>
+			</div>
+			<div class="jg-col l3 m6 jg-margin-bottom">
+				<div class="jg-display-container">
+					<img loading="lazy" src="/images/wayminer-min.jpg" alt="WayMiner" width="100%" height="100%">
+					<img src="/images/ender-min.jpg" alt="Ender 3 v2" width="100%" height="100%">
+				</div>
+			</div>
+			<div class="jg-col l3 m6 jg-margin-bottom">
+				<div class="jg-display-container">
+					<img loading="lazy" src="/images/tiktok-min.jpg" alt="OvniReturns" width="100%" height="100%">
+					<img loading="lazy" src="/images/coolpetbed-min.jpg" alt="CoolPetBed" width="100%" height="100%">
+				</div>
+			</div>
 		</div>
-		<div class="slide">
-			<img src="./images/shopify.jpg" height="100" width="250" alt="" />
-		</div>
-		<div class="slide">
-			<img src="./images/seo.jpg" height="100" width="250" alt="" />
-		</div>
-	</div>
-</div>
-
-
-
-
-
-<!-- Cursos-->
-<div class="jg-container  jg-gradient-green-blue jg-center" style="padding:32px 32px">
-  <div class="jg-row-padding">
-      <h2>Cursos</h2>
-      <a href="https://learndigital.withgoogle.com/link/1nur091p2ww" target="_blank">Digitaliza paso a paso tu negocio con herramientas de Google</a>
-      <p>Código: GSPAGT79A</p>
-      <a href="https://learndigital.withgoogle.com/link/1nur091p2ww" target="_blank">Competencias digitales para profesionales</a>
-      <p>Código: JRPUQYTLX</p>
-      <a href="https://learndigital.withgoogle.com/link/1nur091p2ww" target="_blank">Protege tu Negocio: Ciberseguridad en el Teletrabajo</a>
-      <p>Código: M3HTJ9DTA</p>
-  </div>
-</div>
-
-
-<!-- Project Section -->
-
-<style>
-button {
- position: relative;left: 45%;
- display: inline-block;
- cursor: pointer;
- outline: none;
- border: 0;
- vertical-align: middle;
- text-decoration: none;
- background: transparent;
- padding: 0;
- font-size: inherit;
- font-family: inherit;
-}
-
-button.learn-more {
- width: 12rem;
- height: auto;
-}
-
-button.learn-more .circle {
- transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
- position: relative;
- display: block;
- margin: 0;
- width: 3rem;
- height: 3rem;
- background: #282936;
- border-radius: 1.625rem;
-}
-
-button.learn-more .circle .icon {
- transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
- position: absolute;
- top: 0;
- bottom: 0;
- margin: auto;
- background: #fff;
-}
-
-button.learn-more .circle .icon.arrow {
- transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
- left: 0.625rem;
- width: 1.125rem;
- height: 0.125rem;
- background: none;
-}
-
-button.learn-more .circle .icon.arrow::before {
- position: absolute;
- content: "";
- top: -0.29rem;
- right: 0.0625rem;
- width: 0.625rem;
- height: 0.625rem;
- border-top: 0.125rem solid #fff;
- border-right: 0.125rem solid #fff;
- transform: rotate(45deg);
-}
-
-button.learn-more .button-text {
- transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
- position: absolute;
- top: 0;
- left: 0;
- right: 0;
- bottom: 0;
- padding: 0.75rem 0;
- margin: 0 0 0 1.85rem;
- color: #282936;
- font-weight: 700;
- line-height: 1.6;
- text-align: center;
- text-transform: uppercase;
-}
-
-button:hover .circle {
- width: 100%;
-}
-
-button:hover .circle .icon.arrow {
- background: #fff;
- transform: translate(1rem, 0);
-}
-
-button:hover .button-text {
- color: #fff;
-}
-</style>
-
-<div class="jg-row-padding jg-gradient-green-blue">
-  <button class="learn-more" onclick="window.location.href='./proyectos/'">
-    <span class="circle" aria-hidden="true">
-    <span class="icon arrow"></span>
-    </span>
-    <span class="button-text">Ver más</span>
-  </button>
-  <p> <br> </p>
-</div></div>
-
-<div class="jg-row-padding jg-gradient-green-blue">
-  <div class="jg-col l3 m6 jg-margin-bottom">
-    <div class="jg-display-container">
-      <img class="jg-image" src="/images/wayindustries-min.jpg" alt="WayIndustries" style="width:100%">
-      <img class="jg-image" src="/images/mac-min.jpg" alt="3d mac macintosh 3d design" style="width:100%">
-      <img class="jg-image" src="/images/titancore-min.jpg" alt="TitanCore" style="width:100%">
-      <img class="jg-image" src="/images/jgcss-min.jpg" alt="jg.css" style="width:100%">
-    </div>
-  </div>
-  <div class="jg-col l3 m6 jg-margin-bottom">
-    <div class="jg-display-container">
-      <img class="jg-image" src="/images/pcbuilds.gif" alt="PCs" style="width:100%">
-      <img class="jg-image" src="/images/waygaming-min.jpg" alt="WayGaming" style="width:100%">
-      <img class="jg-image" src="/images/waysticker.jpeg" alt="WayStickers" style="width:100%">
-    </div>
-  </div>
-  <div class="jg-col l3 m6 jg-margin-bottom">
-    <div class="jg-display-container">
-      <img class="jg-image" src="/images/wayminer-min.jpg" alt="WayMiner" style="width:100%">
-      <img class="jg-image" src="/images/ender-min.jpg" alt="Ender 3 v2" style="width:100%">
-    </div>
-  </div>
-  <div class="jg-col l3 m6 jg-margin-bottom">
-    <div class="jg-display-container">
-      <img class="jg-image" src="/images/tiktok-min.jpg" alt="OvniReturns" style="width:100%">
-      <img class="jg-image" src="/images/coolpetbed-min.jpg" alt="CoolPetBed" style="width:100%">
-    </div>
-  </div>
-</div>
-
-<!-- Footer -->
-<footer class="jg-center jg-black jg-padding-16">
-  <a href="./" class="jg-button jg-light-grey"><i class="fa fa-arrow-up jg-margin-right"></i>Subir arriba</a>
-  <div class="jg-xlarge jg-section">
-    <a href="https://instagram.com/juan_garcia2006_/" target="_blank" class="fa fa-instagram jg-no-underline jg-hover-opacity"></a>
-    <a href="https://youtube.com/channel/UCr2BL4M0lVXs_ZjaFEeI6KQ" target="_blank" class="fa fa-youtube jg-no-underline jg-hover-opacity"></a>
-    <a href="https://www.linkedin.com/in/juan-antonio-garc%C3%ADa-torrens-42959023a/" target="_blank" class="fa fa-linkedin jg-no-underline jg-hover-opacity"></a>
-    <a href="https://discord.gg/VeFtX5rUBQ" target="_blank" class="fab fa-discord jg-no-underline jg-hover-opacity"></a>
-    <a href="https://github.com/BananaC9" target="_blank" class="fab fa-github jg-no-underline jg-hover-opacity"></a>
-    <a href="mailto:superjuan.madrid2015@gmail.com" class="fas fa-envelope jg-no-underline jg-hover-opacity"></a>
-    <p class="jg-tiny">superjuan.madrid2015@gmail.com</p>
-  </div>
- <p class="jg-small">© Copyright 2022 - Juan García</p>
-</footer>
- 
-<script>
-// Modal Image Gallery
-function onClick(element) {
-  document.getElementById("img01").src = element.src;
-  document.getElementById("modal01").style.display = "block";
-  var captionText = document.getElementById("caption");
-  captionText.innerHTML = element.alt;
-}
-
-
-// Toggle between showing and hiding the sidebar when clicking the menu icon
-var mySidebar = document.getElementById("mySidebar");
-
-function jg_open() {
-  if (mySidebar.style.display === 'block') {
-    mySidebar.style.display = 'none';
-  } else {
-    mySidebar.style.display = 'block';
-  }
-}
-
-// Close the sidebar with the close button
-function jg_close() {
-    mySidebar.style.display = "none";
-}
-</script>
-</body>
+		<!-- Footer -->
+		<footer class="jg-center jg-black jg-padding-16">
+			<a href="./" class="jg-button jg-light-grey">
+				<i class="fa fa-arrow-up jg-margin-right"></i>Subir arriba </a>
+			<div class="jg-xlarge jg-section">
+				<a href="https://instagram.com/juan_garcia2006_/" target="_blank" class="fa fa-instagram jg-no-underline jg-hover-opacity"></a>
+				<a href="https://youtube.com/channel/UCr2BL4M0lVXs_ZjaFEeI6KQ" target="_blank" class="fa fa-youtube jg-no-underline jg-hover-opacity"></a>
+				<a href="https://www.linkedin.com/in/juan-antonio-garc%C3%ADa-torrens-42959023a/" target="_blank" class="fa fa-linkedin jg-no-underline jg-hover-opacity"></a>
+				<a href="https://discord.gg/VeFtX5rUBQ" target="_blank" class="fab fa-discord jg-no-underline jg-hover-opacity"></a>
+				<a href="https://github.com/BananaC9" target="_blank" class="fab fa-github jg-no-underline jg-hover-opacity"></a>
+				<a href="mailto:superjuan.madrid2015@gmail.com" class="fas fa-envelope jg-no-underline jg-hover-opacity"></a>
+				<p class="jg-tiny">superjuan.madrid2015@gmail.com</p>
+			</div>
+			<p class="jg-small">© Copyright 2022 - Juan García</p>
+		</footer>
+		
+    <!-- Preload when link is on screen -->
+		<script src="//instant.page/5.1.1" type="module" integrity="sha384-MWfCL6g1OTGsbSwfuMHc8+8J2u71/LA8dzlIN3ycajckxuZZmF+DNjdm7O6H3PSq"></script>
+	</body>
 </html>
