@@ -52,6 +52,6 @@
 }
 
 .jg-blur {
-    backdrop-filter: blur(10px) saturate(100%);
+    background-color: #2197BE;
     border-radius: 25px;
 }
