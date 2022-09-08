@@ -52,7 +52,96 @@
 }
 
 .headertext {
-    background-color: rgba(33, 151, 190, 0.5);
+    background-color: rgba(12, 133, 177, 0.5);
     border-radius: 10px;
     margin-right: 0em;
+}
+
+/* Skill bars */
+
+.skillbar {
+    position: relative;
+    top: 0.1em;
+    width: 90%;
+    height: 70em;
+    margin: auto;
+}
+
+.container>h1 {
+    text-align: center;
+}
+
+@keyframes load {
+    from {
+        width: 30%
+    }
+}
+
+@-webkit-keyframes load {
+    from {
+        width: 30%
+    }
+}
+
+@-moz-keyframes load {
+    from {
+        width: 30%
+    }
+}
+
+@-o-keyframes load {
+    from {
+        width: 30%
+    }
+}
+
+.bar {
+    background-color: #12192c;
+    padding: 3px;
+    border-radius: 25px;
+    margin-bottom: 15px;
+    font-size: 14px;
+    color: #121;
+    font-weight: 600;
+}
+
+.bar::before {
+    content: attr(data-skill);
+    display: inline-block;
+    padding: 5px 0 5px 10px;
+    border-radius: inherit;
+    animation: load 2s 0s;
+    -webkit-animation: load 5s 1s;
+    -moz-animation: load 5s 1s;
+    -o-animation: load 5s 1s;
+}
+
+.bar.verylow::before {
+    background-color: rgb(10, 141, 255);
+    width: calc(20% - 10px);
+}
+
+.bar.low::before {
+    background-color: hsla(208, 100%, 52%, 1);
+    width: calc(40% - 10px);
+}
+
+.bar.medium::before {
+    background-color: hsla(208, 100%, 52%, 1);
+    width: calc(60% - 10px);
+}
+
+.bar.mediumhigh::before {
+    background-color: rgb(10, 141, 255);
+    width: calc(80% - 10px);
+}
+
+.bar.high::before {
+    background-color: rgb(10, 141, 255);
+    width: calc(90% - 10px);
+}
+
+.bar.veryhigh::before {
+    background-color: rgb(10, 141, 255);
+    width: calc(99% - 10px);
 }
