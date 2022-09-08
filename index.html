@@ -13,7 +13,7 @@
 		<link rel="icon" type="image/x-icon" href="./images/transparent-logo.png">
 		<!-- CSS -->
 		<link rel="stylesheet" href="./css/jg.css">
-    <link rel="stylesheet" href="./css/main.css" type="text/css">
+    <link rel="stylesheet" href="./css/main.css">
 		<!-- Font awesome 5 and font-->
 		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway&display=swap">
 		<script src="https://kit.fontawesome.com/3e6664068e.js" crossorigin="anonymous"></script>
@@ -35,17 +35,13 @@
 				display: flex;
 				height: 100vh;
 				justify-content: center;
-				background-color: #2197BE;
+				background-image: linear-gradient(270deg, #08AEEA 0%, #0c85b1 100%);
 			}
 
       /* Barra navegación */
 			.jg-bar .jg-button {
 				padding: 16px;
-			}
-		
-			.texto {
-				font-size: 4.4em;
-			}
+			}			
 		</style>
 	</head>
 
@@ -66,15 +62,12 @@
 
 		<!-- Header con animación 3d -->
 		<header class="backgroundstuff jg-display-container" id="home">
-			<iframe src='https://my.spline.design/macbookprocopycopy-79d114039c559b02bbf83a062d9c4e63/' frameborder='0' width='100%' height='800em'></iframe>
+			<iframe src='https://pcfondobig.netlify.app' frameborder='0' width='100%' height='100%'></iframe>
       <!-- Texto delante del header-->
 			<div class="jg-display-left jg-text-white" style="padding:48px">
 				<div class="headertext">
-					<p class="texto jg-hide-small jg-text-black ">Juan García </p>
+					<p class="jg-jumbo jg-text-black ">Juan García </p>
 				</div>
-				<div class="headertext" style="text-align: left;">
-				<p class="texto jg-hide-large jg-hide-medium jg-text-black">Juan García </p>
-			    </div>
 				<div class="headertext">
 					<p class="jg-large jg-text-black">Programador y emprendedor. </p>
 				</div>
@@ -88,7 +81,7 @@
 			</div>
 			
       <!-- Iconos de redes sociales -->
-			<div class="jg-display-bottomleft jg-text-grey jg-large headertext" style="padding:24px 48px">
+			<div class="jg-display-bottomleft jg-text-grey jg-large blur" style="padding:24px 48px">
 				<a href="https://instagram.com/juan_garcia2006_/" target="_blank" class="fa fa-instagram jg-no-underline jg-hover-opacity jg-text-black"></a>
 				<a href="https://youtube.com/channel/UCr2BL4M0lVXs_ZjaFEeI6KQ" target="_blank" class="fa fa-youtube jg-no-underline jg-hover-opacity jg-text-black"></a>
 				<a href="https://www.linkedin.com/in/juan-antonio-garc%C3%ADa-torrens-42959023a/" target="_blank" class="fa fa-linkedin jg-no-underline jg-hover-opacity jg-text-black"></a>
@@ -103,122 +96,32 @@
 			<br>
 			<h1 class="jg-center">Sobre mí</h1>
 			<div class="jg-row-padding jg-center" style="margin-top:64px">
-				<div class="jg-quarter jg-zoom-11">
+				<div class="jg-quarter">
 					<i class="fa fa-book jg-margin-bottom jg-jumbo jg-center"></i>
 					<p class="jg-large">Idiomas</p>
 					<p>Se hablar español, alemán e inglés.</p>
 				</div>
-				<div class="jg-quarter jg-zoom-11">
+				<div class="jg-quarter">
 					<i class="fa fa-heart jg-margin-bottom jg-jumbo"></i>
 					<p class="jg-large">Pasión</p>
 					<p>Siempre me ha apasionado el mundo del emprendimiento y de la informática.</p>
 				</div>
-				<div class="jg-quarter jg-zoom-11">
+				<div class="jg-quarter">
 					<i class="fa fa-bar-chart jg-margin-bottom jg-jumbo"></i>
 					<p class="jg-large">Emprendedor</p>
 					<p>He montado varios e-commerce, mineros y diferentes negocios.</p>
 				</div>
-				<div class="jg-quarter jg-zoom-11">
+				<div class="jg-quarter">
 					<i class="fa fa-cog jg-margin-bottom jg-jumbo"></i>
 					<p class="jg-large">Técnico</p>
 					<p>He arreglado y montado más de 30 ordenadores. </p>
 				</div>
 			</div>
 		</div>
+
 		<!-- Skills -->
-		<style>
-			.skillbar {
-				position: relative;
-				top: 0.1em;
-				width: 90%;
-				height: 70em;
-				margin: auto;
-				padding: 1.5625em;
-				border-radius: 25px;
-				background-image: linear-gradient(270deg, #2AF598 0%, #08AEEA 100%);
-			}
-
-			.container>h1 {
-				text-align: center;
-			}
-
-			@keyframes load {
-				from {
-					width: 30%
-				}
-			}
-
-			@-webkit-keyframes load {
-				from {
-					width: 30%
-				}
-			}
-
-			@-moz-keyframes load {
-				from {
-					width: 30%
-				}
-			}
-
-			@-o-keyframes load {
-				from {
-					width: 30%
-				}
-			}
-
-			.bar {
-				background-color: #12192c;
-				padding: 3px;
-				border-radius: 25px;
-				margin-bottom: 15px;
-				font-size: 14px;
-				color: #121;
-				font-weight: 600;
-			}
-
-			.bar::before {
-				content: attr(data-skill);
-				display: inline-block;
-				padding: 5px 0 5px 10px;
-				border-radius: inherit;
-				animation: load 2s 0s;
-				-webkit-animation: load 5s 1s;
-				-moz-animation: load 5s 1s;
-				-o-animation: load 5s 1s;
-			}
-
-			.bar.verylow::before {
-				background-color: rgb(10, 141, 255);
-				width: calc(20% - 10px);
-			}
-
-			.bar.low::before {
-				background-color: hsla(208, 100%, 52%, 1);
-				width: calc(40% - 10px);
-			}
-
-			.bar.medium::before {
-				background-color: hsla(208, 100%, 52%, 1);
-				width: calc(60% - 10px);
-			}
-
-			.bar.mediumhigh::before {
-				background-color: rgb(10, 141, 255);
-				width: calc(80% - 10px);
-			}
-
-			.bar.high::before {
-				background-color: rgb(10, 141, 255);
-				width: calc(90% - 10px);
-			}
-
-			.bar.veryhigh::before {
-				background-color: rgb(10, 141, 255);
-				width: calc(99% - 10px);
-			}
-		</style>
-		<div class="skillbar">
-			<h1>Mis habilidades </h2>
+		<div class="skillbar jg-gradient-green-blue jg-round-xxlarge" style="padding: 1.5625em;">
+			<h2>Mis habilidades </h2>
 				<div class="bar high jg-background-blue" data-skill="Java"></div>
 				<div class="bar veryhigh" data-skill="E-commerce"></div>
 				<div class="bar veryhigh" data-skill="SQL y MariaDB"></div>
@@ -236,12 +139,14 @@
 				<div class="bar veryhigh" data-skill="Marketing digital orgánico"></div>
 				<div class="bar veryhigh" data-skill="Marketing digital"></div>
 		</div>
-		<br>
+
+
 		<!-- Experiencia -->
 		<div class="jg-container jg-white jg-padding-16 jg-center">
 			<h4>Experiencia</h4>
 			<p>DSM (Colegio Alemán de Madrid) 2013 - 2025 <br>WayGaming CEO 2022 <br>WayIndustries CEO 2022 - ahora <br>Co-Fundador de UnidosEmprendedores (Discord de 2200 miembros) </p>
 		</div>
+
 		<!-- Slider small mucho codigo -->
 		<style>
 			.slidercontainer {
@@ -258,7 +163,7 @@
 				}
 
 				100% {
-					transform: translateX(calc(-15.625em * 12));
+					transform: translateX(calc(-15.625em * 6));
 				}
 			}
 
@@ -268,7 +173,7 @@
 				}
 
 				100% {
-					transform: translateX(calc(-15.625em * 12));
+					transform: translateX(calc(-15.625em * 6));
 				}
 			}
 
@@ -304,10 +209,10 @@
 			}
 
 			.slider .slide-track {
-				-webkit-animation: scroll 32.4s linear infinite;
-				animation: scroll 32.4s linear infinite;
+				-webkit-animation: scroll 34.2s linear infinite;
+				animation: scroll 34.2s linear infinite;
 				display: flex;
-				width: calc(15.625em * 6);
+				width: calc(15.625em * 12);
 			}
 
 			.slider .slide {
@@ -353,39 +258,40 @@
 		<div class="slider slidercontainer sliderstuff1 sliderstuff2 sliderstuff3 sliderstuff4">
 			<div class="slide-track">
 				<div class="slide">
-					<img src="./images/java.jpg" height="100px" width="250px" />
+					<img loading="lazy" src="./images/java.jpg" height="100px" width="250px" />
 				</div>
 				<div class="slide">
-					<img src="./images/html.jpg" height="100px" width="250px" />
+					<img loading="lazy" src="./images/html.jpg" height="100px" width="250px" />
 				</div>
 				<div class="slide">
-					<img src="./images/css.jpg" height="100px" width="250px" />
+					<img loading="lazy" src="./images/css.jpg" height="100px" width="250px" />
 				</div>
 				<div class="slide">
-					<img src="./images/mysql.jpg" height="100px" width="250px" />
+					<img loading="lazy" src="./images/mysql.jpg" height="100px" width="250px" />
 				</div>
 				<div class="slide">
-					<img src="./images/shopify.jpg" height="100px" width="250px" />
-				</div>
-					<img src="./images/java.jpg" height="100px" width="250px" />
+					<img loading="lazy" src="./images/shopify.jpg" height="100px" width="250px" />
 				</div>
 				<div class="slide">
-					<img src="./images/html.jpg" height="100px" width="250px" />
+					<img loading="lazy" src="./images/seo.jpg" height="100px" width="250px" />
 				</div>
 				<div class="slide">
-					<img src="./images/css.jpg" height="100px" width="250px" />
+					<img loading="lazy" src="./images/java.jpg" height="100px" width="250px" />
 				</div>
 				<div class="slide">
-					<img src="./images/mysql.jpg" height="100px" width="250px" />
+					<img loading="lazy" src="./images/html.jpg" height="100px" width="250px" />
 				</div>
 				<div class="slide">
-					<img src="./images/shopify.jpg" height="100px" width="250px" />
+					<img loading="lazy" src="./images/css.jpg" height="100px" width="250px" />
 				</div>
 				<div class="slide">
-					<img src="./images/java.jpg" height="100px" width="250px"/>
+					<img loading="lazy" src="./images/mysql.jpg" height="100px" width="250px" />
 				</div>
 				<div class="slide">
-					<img src="./images/mysql.jpg" height="100px" width="250px"/>
+					<img loading="lazy" src="./images/shopify.jpg" height="100px" width="250px" />
+				</div>
+				<div class="slide">
+					<img loading="lazy" src="./images/seo.jpg" height="100px" width="250px" />
 				</div>
 			</div>
 		</div>

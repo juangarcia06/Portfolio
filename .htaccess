@@ -1,0 +1,2 @@
+# Pagina de error
+ErrorDocument 404 /error/index.html
